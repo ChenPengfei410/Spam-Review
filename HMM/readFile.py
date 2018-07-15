@@ -3,7 +3,7 @@ import operator
 
 
 person_dict = dict()
-with open("metadata", 'r') as file:
+with open("../metadata", 'r') as file:
 	for line in file:
 		line = line.split('\t')
 		user_id = line[0]
