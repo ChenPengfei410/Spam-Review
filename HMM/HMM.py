@@ -26,7 +26,6 @@ with open("sorted.txt", 'r') as file:
 		lengths.append(length - 1)
 		file.readline()
 X = np.concatenate(X)
-print(X)
 
 warnings.filterwarnings("ignore")
 model = GaussianHMM(n_components=20, n_iter=10000, tol=1, verbose=True)
