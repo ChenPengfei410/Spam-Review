@@ -39,8 +39,8 @@ hidden_state = model.predict(X, lengths)
 start = 0
 with open("hidden_states.txt", 'w') as file:
 	for i in range(len(user_id_list)):
-		file.write(user_id_list[i] + '\n')
+		file.write(user_id_list[i])
 		for j in range(lengths[i]):
 			file.write(str(hidden_state[start + j]) + '\t')
 		start += lengths[i]
-		file.write('\n')
+		file.write('\n\n')
